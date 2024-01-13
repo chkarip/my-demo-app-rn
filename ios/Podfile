@@ -7,6 +7,8 @@ platform :ios, '12.0'
 
 target 'MyRNDemoApp' do
   use_expo_modules!
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
   post_integrate do |installer|
     expo_patch_react_imports!(installer)
   end
